@@ -82,13 +82,17 @@ console.log("Output from .map req. #1: " + doubleNumbers([2, 5, 100]));
 
 //2. Take an array of numbers and make them strings.
 function stringItUp(arr){
-
+    var num = arr.toString();
+    return result;
 }
 console.log(stringItUp([2, 5, 100]));
 
 //3. Capitalize each of an array of names.
 function capitalizeNames(arr){
-
+    var result = arr.map(function(names){
+        return names.toUpperCase
+        ;})
+        return result;
 }
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 //["John", "Jacob", "Jingleheimer", "Schmidt"]
