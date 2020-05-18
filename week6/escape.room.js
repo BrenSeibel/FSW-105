@@ -1,7 +1,7 @@
 var readlineSync = require('readline-sync');
 
 //Read Player's Name
-var userName = readlineSync.question('May I have your name? ');
+var userName = readlineSync.question('Your name please? ');
 
 const strWelcome = `Welcome ${userName} to the Escape Room Simulation!`;
 console.log(strWelcome);
@@ -38,7 +38,7 @@ while(isPlayerAlive === true)
     else if (myGameMenuOptions == 3 && hasKey == true)
     {
         //player selected option 3, player does have the key
-        console.log(`${userName}, you already have the key, and you opened the door, game is over!`);
+        console.log(`${userName}, you found have the key, and you opened the door, You WIN!`);
         isPlayerAlive = false;
     }
 }    
