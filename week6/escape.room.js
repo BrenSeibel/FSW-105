@@ -6,6 +6,7 @@ const strWelcome = `Welcome ${userName} to the Escape Room Simulation!`;
 console.log(strWelcome);
 
 let isPlayerAlive = true;
+let hasKey = false;
 
 while(isPlayerAlive === true)
 {
