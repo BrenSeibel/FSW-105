@@ -15,30 +15,30 @@ while(isPlayerAlive === true)
     if (myGameMenuOptions == 1)
     {
         //User Dies
-        console.log(`Sorry ${userName}! You are now dead, game is over!`);
+        console.log(`Sorry ${userName}! You are DEAD, Game OVER!`);
         isPlayerAlive = false;
     }
     else if (myGameMenuOptions == 2 && hasKey == false)
     {
         //first time selecting option 2,player never had access to the key
-        console.log('${userName}, you found the key successfully!');
+        console.log(`${userName}, you have found the KEY!`);
         hasKey = true;
     }
     else if (myGameMenuOptions == 2 && hasKey == true)
     {
         //Player selected option 2, player already had access to the key
-        console.log('${userName}, you already had the key from earlier selection!');
+        console.log(`${userName}, you had found the key earlier!`);
     }
     else if (myGameMenuOptions == 3 && hasKey == false)
     {
         //first time selecting option 3, player does not have the key
-        console.log('${userName} - you need to find the key first!');
+        console.log(`${userName} - you need to find the key first!`);
         hasKey = true;
     }
     else if (myGameMenuOptions == 3 && hasKey == true)
     {
         //player selected option 3, player does have the key
-        console.log('${userName}, you already have the key, and you opened the door, game is over!');
+        console.log(`${userName}, you already have the key, and you opened the door, game is over!`);
         isPlayerAlive = false;
     }
 }    
